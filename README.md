@@ -90,3 +90,4 @@ python regex_tokenizer.py   # writes the full vocab to test.md
 
 - The tokenizer is trained on the text in `tinystories_train.md` (a sample), while the model trains on the first 100,000 stories streamed from the Hugging Face dataset — so the vocabulary is derived from a subset of the full training corpus.
 - This is a learning-focused implementation prioritizing clarity of mechanism over throughput (e.g. attention heads run as a Python list rather than a single batched matmul).
+- hardware constraints resulted in sub optimal output, but model was working and with better hardware and longer training, there will be etter results
